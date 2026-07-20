@@ -2,13 +2,35 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
+import Dashboard from './pages/dashboard/Dashboard';
+import Goals from './pages/goals/Goals';
+import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/common/ProtectedRoute';
 
-// Placeholder — replaced in Sprint 9
-const Dashboard = () => (
-    <div className="min-h-screen bg-surface-3 flex items-center
-                  justify-center text-text-primary text-2xl">
-        🏠 Dashboard — Coming in Sprint 9
+// Placeholder pages — built in Sprint 10, 11, 12
+const Habits = () => (
+    <div className="text-text-primary text-xl">
+        🔥 Habits — Coming in Sprint 10
+    </div>
+);
+const Jobs = () => (
+    <div className="text-text-primary text-xl">
+        💼 Job Tracker — Coming in Sprint 11
+    </div>
+);
+const Coach = () => (
+    <div className="text-text-primary text-xl">
+        🤖 AI Coach — Coming in Sprint 12
+    </div>
+);
+const Notifications = () => (
+    <div className="text-text-primary text-xl">
+        🔔 Notifications — Coming soon
+    </div>
+);
+const Settings = () => (
+    <div className="text-text-primary text-xl">
+        ⚙️ Settings — Coming soon
     </div>
 );
 
@@ -28,18 +50,32 @@ function App() {
                 }}
             />
             <Routes>
+
+                {/* Public routes */}
                 <Route path="/login"    element={<Login />} />
                 <Route path="/register" element={<Register />} />
+
+                {/* Protected routes — wrapped in Layout */}
                 <Route
-                    path="/dashboard"
                     element={
                         <ProtectedRoute>
-                            <Dashboard />
+                            <Layout />
                         </ProtectedRoute>
                     }
-                />
-                <Route path="/"  element={<Navigate to="/login" replace />} />
-                <Route path="*"  element={<Navigate to="/login" replace />} />
+                >
+                    <Route path="/dashboard"     element={<Dashboard />} />
+                    <Route path="/goals"         element={<Goals />} />
+                    <Route path="/habits"        element={<Habits />} />
+                    <Route path="/jobs"          element={<Jobs />} />
+                    <Route path="/coach"         element={<Coach />} />
+                    <Route path="/notifications" element={<Notifications />} />
+                    <Route path="/settings"      element={<Settings />} />
+                </Route>
+
+                {/* Default */}
+                <Route path="/"  element={<Navigate to="/dashboard" replace />} />
+                <Route path="*"  element={<Navigate to="/dashboard" replace />} />
+
             </Routes>
         </BrowserRouter>
     );

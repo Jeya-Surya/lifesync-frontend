@@ -19,7 +19,7 @@ const Login = () => {
         setLoading(true);
         try {
             const res = await authApi.login(form);
-            const { token, name, email, role } = res.data;
+            const { token, name, email, role } = await res.data;
             login(token, { name, email, role });
             toast.success(`Welcome back, ${name}!`);
             navigate('/dashboard');
@@ -68,7 +68,7 @@ const Login = () => {
                                 name="email"
                                 value={form.email}
                                 onChange={handleChange}
-                                placeholder="surya@lifesync.com"
+                                placeholder="example@lifesync.com"
                                 required
                                 className="input-field"
                             />

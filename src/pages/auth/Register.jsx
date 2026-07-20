@@ -23,7 +23,7 @@ const Register = () => {
         setLoading(true);
         try {
             const res = await authApi.register(form);
-            const { token, name, email, role } = res.data;
+            const { token, name, email, role } = await res.data;
             login(token, { name, email, role });
             toast.success(`Welcome to LifeSync, ${name}!`);
             navigate('/dashboard');
