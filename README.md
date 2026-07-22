@@ -1,16 +1,70 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🔄 LifeSync Frontend
 
-Currently, two official plugins are available:
+### Personal Life OS — React Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[![React](https://img.shields.io/badge/React-18-blue?style=flat-square&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-5-purple?style=flat-square&logo=vite)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-teal?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React frontend for LifeSync — a Personal Life OS. Built with Vite, Tailwind CSS, Zustand, and Axios.
+
+---
+
+## 🖥️ Pages
+
+| Page | Description |
+|---|---|
+| Login / Register | JWT auth with toast feedback |
+| Dashboard | Morning overview — habits, goals, jobs, AI coach |
+| Goals | Goal + milestone tracking with progress bars |
+| Habits | Daily check-ins with GitHub-style heatmap |
+| Job Tracker | Kanban board — Applied → Interview → Offer |
+| AI Coach | Groq AI personalized daily briefing |
+| Notifications | Habit and job update notifications |
+
+---
+
+## ⚙️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React 18 + Vite | UI framework + build tool |
+| Tailwind CSS v3 | Utility-first styling |
+| Zustand | Global state (auth token) |
+| Axios | HTTP client with JWT interceptor |
+| React Router v6 | Client-side routing |
+| React Hot Toast | Toast notifications |
+| Recharts | Charts and analytics |
+| Lucide React | Icon library |
+
+---
+
+## 🚀 Running Locally
+
+```bash
+git clone https://github.com/Jeya-Surya/lifesync-frontend.git
+cd lifesync-frontend
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`
+
+> Make sure the backend is running on port 8080 before starting the frontend.
+
+---
+
+## 👨‍💻 Author
+
+**Jeya Surya** — Final year B.Tech CSE student
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/jeyasuryads)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?style=flat-square&logo=github)](https://github.com/Jeya-Surya)
