@@ -4,15 +4,11 @@ import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import Dashboard from './pages/dashboard/Dashboard';
 import Goals from './pages/goals/Goals';
+import Habits from './pages/habits/Habits';
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/common/ProtectedRoute';
 
-// Placeholder pages — built in Sprint 10, 11, 12
-const Habits = () => (
-    <div className="text-text-primary text-xl">
-        🔥 Habits — Coming in Sprint 10
-    </div>
-);
+// Placeholder pages — built in Sprint 11, 12
 const Jobs = () => (
     <div className="text-text-primary text-xl">
         💼 Job Tracker — Coming in Sprint 11
