@@ -5,15 +5,11 @@ import Register from './pages/auth/Register';
 import Dashboard from './pages/dashboard/Dashboard';
 import Goals from './pages/goals/Goals';
 import Habits from './pages/habits/Habits';
+import Jobs from './pages/jobs/Jobs';
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/common/ProtectedRoute';
 
-// Placeholder pages — built in Sprint 11, 12
-const Jobs = () => (
-    <div className="text-text-primary text-xl">
-        💼 Job Tracker — Coming in Sprint 11
-    </div>
-);
+
 const Coach = () => (
     <div className="text-text-primary text-xl">
         🤖 AI Coach — Coming in Sprint 12
