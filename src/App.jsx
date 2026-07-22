@@ -7,20 +7,10 @@ import Goals from './pages/goals/Goals';
 import Habits from './pages/habits/Habits';
 import Jobs from './pages/jobs/Jobs';
 import Coach from './pages/coach/Coach.jsx'
+import Notifications from './pages/notifications/Notifications';
+import Settings  from "./pages/settings/Settings.jsx";
 import Layout from './components/layout/Layout';
 import ProtectedRoute from './components/common/ProtectedRoute';
-
-
-const Notifications = () => (
-    <div className="text-text-primary text-xl">
-        🔔 Notifications — Coming soon
-    </div>
-);
-const Settings = () => (
-    <div className="text-text-primary text-xl">
-        ⚙️ Settings — Coming soon
-    </div>
-);
 
 function App() {
     return (
